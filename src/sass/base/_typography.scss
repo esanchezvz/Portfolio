@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:700|Ubuntu:400,700&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  padding: 2rem;
+  color: $color-black;
+  font-size: $default-font-size;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fira Mono', monospace;
+  text-transform: uppercase;
+  color: $color-black;
+}

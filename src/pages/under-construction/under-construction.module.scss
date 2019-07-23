@@ -1,0 +1,56 @@
+@import '../../sass/abstract/variables';
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to top,
+      rgba($color-tertiary, 0.7),
+      rgba($color-primary, 0.5)
+    ),
+    url(../../img/construction-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+
+  .logoContainer {
+    max-width: 200px;
+    margin-top: -80px;
+    margin-bottom: 20px;
+
+    .logo {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .headline {
+    font-size: 3.5rem;
+  }
+
+  .slogan {
+    font-size: 2rem;
+    justify-self: center;
+    margin: 20px 0;
+    justify-self: center;
+  }
+
+  .buttons {
+    position: absolute;
+    bottom: 30px;
+
+    a {
+      color: $color-primary;
+      margin: 0 15px;
+      font-size: 3rem;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}
