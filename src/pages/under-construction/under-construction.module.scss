@@ -6,11 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-      to top,
-      rgba($color-tertiary, 0.7),
-      rgba($color-primary, 0.5)
-    ),
+  background-image: linear-gradient(to top, rgba($color-tertiary, 0.7), rgba($color-primary, 0.5)),
     url(../../img/construction-bg.jpg);
   background-size: cover;
   background-position: center;
@@ -40,16 +36,18 @@
   }
 
   .buttons {
-    position: absolute;
-    bottom: 30px;
+    // display: flex;
 
     a {
-      color: $color-primary;
       margin: 0 15px;
       font-size: 3rem;
 
-      &:hover {
-        color: $color-secondary;
+      img {
+        color: $color-primary;
+      }
+
+      &:hover > img {
+        fill: $color-secondary;
       }
     }
   }
