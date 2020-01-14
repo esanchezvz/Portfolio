@@ -2,24 +2,23 @@
 
 .container {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  text-align: center;
   background-image: linear-gradient(to top, rgba($color-tertiary, 0.7), rgba($color-primary, 0.5)),
     url(../../img/construction-bg.jpg);
   background-size: cover;
   background-position: center;
-  text-align: center;
   position: relative;
+  display: table;
+  vertical-align: center;
 
   .logoContainer {
-    max-width: 200px;
-    margin-top: -80px;
     margin-bottom: 20px;
 
     .logo {
+      margin-top: 80px;
       width: 100%;
+      max-width: 300px;
       height: auto;
     }
   }
@@ -36,18 +35,23 @@
   }
 
   .buttons {
-    // display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     a {
+      flex: 1;
+      max-width: 55px;
+      color: $color-primary;
       margin: 0 15px;
       font-size: 3rem;
 
-      img {
-        color: $color-primary;
-      }
-
-      &:hover > img {
-        fill: $color-secondary;
+      &:hover {
+        color: $color-secondary;
       }
     }
   }

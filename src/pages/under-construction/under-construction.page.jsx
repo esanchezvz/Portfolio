@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from './under-construction.module.scss';
 import logo from '../../img/logo.svg';
-import GithubIcon from '../../img/github-icon.svg';
-import LinkedInIcon from '../../img/linkedin-icon.svg';
-import MailIcon from '../../img/mail-icon.svg';
+import { GithubIcon, LinkedinIcon, MailIcon } from '../../Icons';
 
 const UnderConstructionPage = () => {
   return (
@@ -24,16 +22,13 @@ const UnderConstructionPage = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          {/* <img src={linkedInIcon} alt='LinkedIn Icon' /> */}
-          <LinkedInIcon />
+          <LinkedinIcon />
         </a>
         <a href='https://www.github.com/esanchezvz' target='_blank' rel='noopener noreferrer'>
-          {/* <img src={githubIcon} alt='GitHub Icon' /> */}
           <GithubIcon />
         </a>
         <a href='mailto:esteban.sanvaz@gmail.com'>
           <MailIcon />
-          {/* <img src={mailIcon} alt='Mail Icon' /> */}
         </a>
       </div>
     </div>
